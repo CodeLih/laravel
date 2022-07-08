@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Artisan;
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->purpose('Display an inspiring quote');
+Artisan::command('kaimi:make {username} {--call=Mr}',function ($username, $call) {
+	echo "hell {$call} {$username}";
+	echo "\n";
+});

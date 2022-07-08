@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/test',[\App\Http\Controllers\TestController::class, 'index']);
+Route::get('/getToken',[\App\Http\Controllers\TestTokenController::class, 'index']);
+Route::get('/parse',[\App\Http\Controllers\TestTokenController::class, 'parseToken']);
+
+
+Route::get('/hello', function () {
+	return 'hello...';
+});
