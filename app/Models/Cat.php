@@ -3,8 +3,9 @@
 namespace App\Models;
 
 use App\Http\Traits\Dog;
+use Illuminate\Database\Eloquent\Model;
 
-class Cat
+class Cat extends Model
 {
     use Dog;
     public function say() {

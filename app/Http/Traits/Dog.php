@@ -10,5 +10,9 @@ trait Dog
     public function say() {
         echo "this is a dog say";
     }
-
+   public function test() {
+       static::$dispatcher->dispatch(
+       
+       );
+   }
 }
