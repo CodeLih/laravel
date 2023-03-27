@@ -11,6 +11,7 @@ class IndexController
         echo 222;
         echo 333;
         echo 555;
+        echo 666;
     }
 
 }
