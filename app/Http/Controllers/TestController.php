@@ -3,7 +3,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\OrderShipped;
+use App\Events\TestEvent;
 use App\Exceptions\TestException;
+use App\Jobs\TestProd;
 use App\Models\User;
 use RuntimeException;
 use OutOfBoundsException;
@@ -21,10 +24,13 @@ class TestController extends Controller
 //        }
 //
 //        return  222;
-       $array[] = "张三";
-       $array[] = "李四";
-       $array[] = "王五";
-       dump($array);
+//        dd(123);
+//       $array[] = "张三";
+//       $array[] = "李四";
+//       $array[] = "王五";
+//       dump($array);
+
+        event(new TestEvent());
 
     }
 
