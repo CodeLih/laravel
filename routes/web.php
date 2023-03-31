@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/index',[\App\Http\Controllers\TestController::class, 'index']);
+Route::get('/log/index',[\App\Http\Controllers\LogController::class, 'index']);
 Route::get('/test',[\App\Http\Controllers\TestController::class, 'test']);
 Route::get('/getToken',[\App\Http\Controllers\TestTokenController::class, 'index']);
 Route::get('/parse',[\App\Http\Controllers\TestTokenController::class, 'parseToken']);

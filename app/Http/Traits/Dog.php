@@ -5,6 +5,7 @@ namespace App\Http\Traits;
 trait Dog
 {
     public function eat() {
+        dd(111);
         echo "this is a dog eat";
     }
     public function say() {
@@ -12,7 +13,7 @@ trait Dog
     }
    public function test() {
        static::$dispatcher->dispatch(
-       
+
        );
    }
 }

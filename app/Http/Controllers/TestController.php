@@ -6,8 +6,11 @@ namespace App\Http\Controllers;
 use App\Events\OrderShipped;
 use App\Events\TestEvent;
 use App\Exceptions\TestException;
+use App\Http\Traits\Dog;
 use App\Jobs\TestProd;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redis;
 use RuntimeException;
 use OutOfBoundsException;
 use Illuminate\Http\Request;
@@ -15,7 +18,9 @@ use Illuminate\Http\Request;
 
 class TestController extends Controller
 {
+    use Dog;
     protected $array = [];
+
     public function index(Request $request)
     {
 //        $user = User::query()->where('id',1000)->first();
@@ -29,9 +34,15 @@ class TestController extends Controller
 //       $array[] = "李四";
 //       $array[] = "王五";
 //       dump($array);
-
-        event(new TestEvent());
-
+//         echo 111;
+//        $user = Auth::user();
+//        echo '111111'.$user;
+//       dd($user->email);
+//        app('redis')->hset('1111', '2222', '3333');
+//        Redis::set('111', '2222');
+//        $instance = new \ReflectionClass(User::class);
+//        $instance->newInstanceArgs([]);
+//        dd($instance);
     }
 
     /**
@@ -51,7 +62,6 @@ class TestController extends Controller
             throw new TestException("testException");
         }
     }
-
 
 }
 
