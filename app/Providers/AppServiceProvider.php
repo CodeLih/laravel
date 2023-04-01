@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Iidestiny\LaravelFilesystemOss\OssStorageServiceProvider;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -13,7 +14,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $default = config('log.default');
+        $default = config('log.default');OssStorageServiceProvider::
         $logger = config("log.$default.class");
         $this->app->bind(\App\Contracts\LogInterface::class, $logger);
     }

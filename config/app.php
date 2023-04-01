@@ -174,7 +174,10 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+        /**
+         * OSS Service Providers
+         */
+        \Iidestiny\LaravelFilesystemOss\OssStorageServiceProvider::class
     ],
 
     /*

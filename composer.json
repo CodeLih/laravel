@@ -13,8 +13,10 @@
         "firebase/php-jwt": "^5.1",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
+        "iidestiny/laravel-filesystem-oss": "^2.1",
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.0",
+        "league/flysystem-dropbox": "^1.0",
         "predis/predis": "v1.1.6"
     },
     "require-dev": {
