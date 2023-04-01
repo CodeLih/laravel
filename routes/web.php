@@ -18,6 +18,8 @@ Route::get('/', function () {
 });
 Route::get('/index',[\App\Http\Controllers\TestController::class, 'index']);
 Route::get('/log/index',[\App\Http\Controllers\LogController::class, 'index']);
+Route::get('/filter/index',[\App\Http\Controllers\FilterController::class, 'index']);
+Route::get('/filter/parse',[\App\Http\Controllers\FilterController::class, 'parseStr']);
 Route::get('/test',[\App\Http\Controllers\TestController::class, 'test']);
 Route::get('/getToken',[\App\Http\Controllers\TestTokenController::class, 'index']);
 Route::get('/parse',[\App\Http\Controllers\TestTokenController::class, 'parseToken']);
