@@ -12,6 +12,10 @@ class EventController extends Controller
     public function index()
     {
         event(new TestEvent());
+
+
+
+
     }
 
 }
