@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Job;
+namespace App\Jobs;
 
 use App\Http\Traits\Dog;
 use Illuminate\Console\Command;
